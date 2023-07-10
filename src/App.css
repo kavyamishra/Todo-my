@@ -1,0 +1,93 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.todolist {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+  background-color: slategray;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+  color: aqua;
+}
+
+.todo {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: white;
+  color: aqua;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  display: flex;
+  color: aqua;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+label > input {
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+}
+
+label > button {
+  height: 40px;
+  width: 80px;
+  background-color: aqua;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todo h4 {
+  margin: 0;
+  flex: 1;
+  color: black;
+  text-align: left;
+  font-size: 16px;
+}
+
+.todo input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo button {
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.todo button:hover {
+  background-color: darkred;
+}
+.todo input[type="checkbox"]:checked + h4{
+  text-decoration: line-through;
+}
